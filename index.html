@@ -175,65 +175,6 @@
   </div>
 </section>
 
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -242,31 +183,28 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Generating culturally coherent multimodal folktales presents unique challenges, particularly 
+            for underrepresented cultures facing data scarcity and cultural bias. Existing approaches 
+            predominantly rely on Western-centric corpora, limit outputs to text–image modalities, and 
+            reduce culture to a superficial stylistic layer rather than a core narrative structure.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            we propose <i>"MELT"</i> (Multimodal Engine for Localized Tales), a unified framework for culturally 
+            adaptive story generation across text, illustration, and audio. To achieve this, MELT embeds 
+            cultural context as a foundational generative constraint and integrates three modules: 
+            (1) a Localized folktale generation leveraging structured prompting and contextual reasoning 
+            to preserve the narrative flow and cultural identity of traditional folktales; 
+            (2) an Illustration generation that ensures cultural style and character consistency using 
+            a Tri-Stage LoRA(Low-Rank Adaptation) pipeline; (3) a Storytelling audio component
+            tailored to cultural prosody and oral storytelling conventions.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Case studies on Korean and Bengali folktales demonstrate MELT’s ability to generate culturally 
+            coherent outputs using lightweight, data-efficient adaptation techniques. Human evaluation results 
+            demonstrated that MELT consistently outperformed the baseline across both case studies, showing 
+            a substantial improvement in cultural adaptation, nearly doubling the score in the Korean folktale evaluation.
+            By positioning culture as a core generative principle, MELT provides a pathway 
+            for culturally coherent AI storytelling, particularly for underrepresented traditions.
           </p>
         </div>
       </div>
