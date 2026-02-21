@@ -229,6 +229,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Ablation Study: Prompt Decomposition × Guidance Fidelity</h2>
+
+        <div class="content has-text-justified">
+
+          <p>
+            This ablation study aims to determine whether the observed failure in rendering the visual expression 
+            “holding a gleaming” originates from (1) prompt composition, (2) limitations of the MELT framework, 
+            or (3) the representational capacity of the underlying diffusion backbone.
+          </p>
+
+          <h4 class="title is-5">Experimental Setup</h4>
+          <ul>
+            <li><b>Input:</b> The same folktale conclusion text used in the main evaluation.</li>
+            <li><b>Prompt Conditions:</b> Base model, MELT-applied, removal of stylistic keywords, and removal of character references.</li>
+            <li><b>Guidance Scaling:</b> Default and increased guidance_scale values to strengthen conditional fidelity.</li>
+          </ul>
+
+          <h4 class="title is-5">Results and Analysis</h4>
+
+          <p>
+            Across all prompt decomposition conditions and guidance scaling settings, the visual element 
+            corresponding to “holding a gleaming” was consistently absent. Increasing the guidance_scale — 
+            which amplifies the influence of textual conditioning during diffusion sampling — did not 
+            resolve the failure in either the base SDXL configuration or the MELT-enhanced setup.
+          </p>
+
+          <p>
+            These findings indicate that the limitation does not stem from prompt engineering strategies 
+            or from the structural design of the MELT framework. Instead, the failure reflects a 
+            representational bottleneck inherent to the diffusion backbone itself. Consequently, 
+            the upper bound of framework-level performance is fundamentally constrained by the expressive 
+            capacity of the underlying base model.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
