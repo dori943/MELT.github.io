@@ -239,11 +239,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="content has-text-justified">
 
           <p>
-            This ablation study aims to determine whether the observed failure in rendering 
-            the visual expression “holding a gleaming” originates from prompt composition, 
-            limitations of the MELT framework, or the representational capacity of the 
-            underlying diffusion backbone.
+            This ablation study investigates whether the observed failure in rendering 
+            a visually complex expression originates from prompt composition, limitations 
+            of the MELT framework, or the representational capacity of the underlying 
+            diffusion backbone. In particular, we analyze whether the inability to 
+            faithfully depict the expression “holding a gleaming” reflects a structural 
+            issue in our prompting strategy or an upper-bound constraint imposed by 
+            the base generative model.
           </p>
+
+          <p>
+            To ensure controlled comparison, we used the same folktale ending employed 
+            in the previous evaluation and generated illustrations under four prompt 
+            composition settings: (1) Base model, (2) MELT, (3) Without stylistic keywords, 
+            and (4) Without character references. This setup isolates the contribution 
+            of each component in the prompting and style-conditioning pipeline.
+          </p>
+
+        </div>
+
+        <!-- Image 1 -->
+        <div class="publication-video">
+          <img src="./static/images/ablation_prompt_conditions.png" alt="Ablation Prompt Conditions">
+          <div style="color: #7a7a7a; font-size: 0.9rem; margin-top: 10px;">
+            Generated results under four prompt composition conditions.
+          </div>
+        </div>
+
+        <div class="content has-text-justified">
+
+          <p>
+            In addition, we repeated the experiment while increasing the 
+            <i>guidance_scale</i> parameter to enforce stronger adherence to the 
+            textual condition. This modification aims to determine whether the 
+            failure stems from insufficient text-conditioning strength.
+          </p>
+
+        </div>
+
+        <!-- Image 2 -->
+        <div class="publication-video">
+          <img src="./static/images/ablation_guidance_scale.png" alt="Guidance Scale Experiment">
+          <div style="color: #7a7a7a; font-size: 0.9rem; margin-top: 10px;">
+            Results with increased guidance_scale to strengthen textual fidelity.
+          </div>
+        </div>
+
+        <div class="content has-text-justified">
+
+          <p>
+            However, across all prompt conditions and guidance_scale settings, 
+            the visually challenging expression was not consistently rendered. 
+            Even under stronger textual enforcement, the outcome remained 
+            qualitatively unchanged.
+          </p>
+
+          <p>
+            These findings indicate that the failure does not originate from 
+            prompt decomposition or the architectural design of MELT. Instead, 
+            the limitation appears to stem from the representational ceiling of 
+            the underlying diffusion model. In other words, the upper performance 
+            bound of the framework is ultimately constrained by the expressive 
+            capacity of the base SDXL backbone.
+          </p>
+
         </div>
       </div>
     </div>
