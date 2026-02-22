@@ -1,14 +1,27 @@
-# Nerfies
+# MELT: Multimodal Engine for Localized Tales
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the official repository for the **MELT website** ([https://dori943.github.io/MELT.github.io/](https://dori943.github.io/MELT.github.io/)).
 
-If you find Nerfies useful for your work please cite:
+### 💻 Source Code & Implementation
+The complete research code, including training and inference notebooks, is hosted in a separate repository. You can find all the implementation details, including LoRA training and T2I generation scripts, here:
+
+🔗 **[Go to MELT Research Code Repository](https://github.com/egggbeee-dev/MELT)**
+
+---
+
+## 📖 About the Project
+**MELT** is a unified framework for culturally adaptive story generation across text, illustration, and audio. For a detailed overview of our methodology and upcoming research paper, please refer to the project website linked above.
+
+---
+
+If you find MELT useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@article{MELT2026
+  author    = {Hanbi Choi, Yuri Kim, Dohee Kim, Heejae Shin and Minsu Lee},
+  title     = {MELT: A Style-Adaptive Multimodal Folktale Generation Framework for Underrepresented Cultures},
+  journal   = {Forthcoming / Under Review},
+  year      = {2026},
+  url       = {https://dori943.github.io/MELT.github.io/}
 }
 ```
 
