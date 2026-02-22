@@ -254,7 +254,79 @@ versions of the Filipino folktale “The Terrible Tic-balan.”
   </div>
 </section>
 
+<!-- Evaluation -->
+<section>
+  <h2>Human Evaluation Summary</h2>
 
+  <p>
+    We conducted a human evaluation comparing MELT with a baseline multimodal pipeline 
+    (GPT-4.1 + SDXL + TTS).
+  </p>
+
+  <p><strong>Participants:</strong></p>
+  <ul>
+    <li>21 adult Korean participants (recruited via Google Forms)</li>
+    <li>18 Bengali-speaking participants (recruited via Prolific)</li>
+  </ul>
+
+  <p>
+    Participants evaluated aligned folktale pairs (Baseline vs. MELT) using a 5-point Likert scale.
+  </p>
+
+  <p><strong>Evaluation Criteria:</strong></p>
+  <ul>
+    <li>Overall Quality</li>
+    <li>Cultural Adaptation</li>
+    <li>Cultural Coherence</li>
+  </ul>
+
+  <p>
+    MELT consistently outperformed the baseline across all criteria.
+    In the Korean case, the Cultural Adaptation score nearly doubled compared to the base model.
+  </p>
+
+  <h3>Table: Human Evaluation Results</h3>
+
+  <table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr>
+        <th rowspan="2">Metric</th>
+        <th colspan="2">Korean</th>
+        <th colspan="2">Bengali</th>
+      </tr>
+      <tr>
+        <th>Base</th>
+        <th>MELT</th>
+        <th>Base</th>
+        <th>MELT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Overall Quality</td>
+        <td>2.81 ± 0.98</td>
+        <td>4.19 ± 0.68</td>
+        <td>3.59 ± 0.07</td>
+        <td>4.15 ± 0.14</td>
+      </tr>
+      <tr>
+        <td>Cultural Adaptation</td>
+        <td>2.29 ± 1.01</td>
+        <td>4.51 ± 0.75</td>
+        <td>3.33 ± 0.18</td>
+        <td>4.09 ± 0.05</td>
+      </tr>
+      <tr>
+        <td>Cultural Coherence</td>
+        <td>2.48 ± 0.93</td>
+        <td>4.33 ± 0.66</td>
+        <td>3.28 ± 0.39</td>
+        <td>4.32 ± 0.05</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+  
 <!-- Ablation study -->
 <section class="section">
   <div class="container is-max-desktop">
