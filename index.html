@@ -230,101 +230,124 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- Case study -->
+<!-- Case Study -->
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3"> Case Studies: Culturally Adaptive Multimodal Generation in Korean and Bengali Folktales </h2>
+
+        <h2 class="title is-3 has-text-centered">
+          Case Studies: Culturally Adaptive Multimodal Generation in Korean and Bengali Folktales
+        </h2>
 
         <div class="content has-text-justified">
           <p>
-            To demonstrate the practical application of our methodology, we conducted a case 238
-study on the Filipino folktale “The Terrible Tic-balan.”
+            To demonstrate the practical application of our methodology, 
+            we conducted a case study on the Filipino folktale 
+            “The Terrible Tic-balan.”
           </p>
-          <img src="./static/images/figure20.png" alt="Please Reload">
+        </div>
 
-          <div style="color: #7a7a7a; font-size: 0.9rem; margin-top: 10px;">
-            Examples of  culturally adapted outputs: Korea (left) and Bengal (right)
-versions of the Filipino folktale “The Terrible Tic-balan.”
+        <!-- Centered Image -->
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <figure>
+              <img src="./static/images/figure20.png"
+                   alt="Culturally Adapted Outputs"
+                   style="max-width: 100%; height: auto;">
+
+              <figcaption style="color:#7a7a7a; font-size:0.9rem; margin-top:10px;">
+                Examples of culturally adapted outputs: Korea (left) and Bengal (right)
+                versions of the Filipino folktale “The Terrible Tic-balan.”
+              </figcaption>
+            </figure>
           </div>
-        </div>   
+        </div>
+
       </div>
     </div>
   </div>
 </section>
 
 <!-- Evaluation -->
-<section>
-  <h2>Human Evaluation Summary</h2>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
 
-  <p>
-    We conducted a human evaluation comparing MELT with a baseline multimodal pipeline 
-    (GPT-4.1 + SDXL + TTS).
-  </p>
+        <h2 class="title is-3">Human Evaluation</h2>
 
-  <p><strong>Participants:</strong></p>
-  <ul>
-    <li>21 adult Korean participants (recruited via Google Forms)</li>
-    <li>18 Bengali-speaking participants (recruited via Prolific)</li>
-  </ul>
+        <div class="content has-text-justified">
 
-  <p>
-    Participants evaluated aligned folktale pairs (Baseline vs. MELT) using a 5-point Likert scale.
-  </p>
+          <p>
+            We conducted a human evaluation comparing MELT with a baseline multimodal pipeline 
+            (GPT-4.1 + SDXL + TTS).
+          </p>
 
-  <p><strong>Evaluation Criteria:</strong></p>
-  <ul>
-    <li>Overall Quality</li>
-    <li>Cultural Adaptation</li>
-    <li>Cultural Coherence</li>
-  </ul>
+          <p><strong>Participants:</strong></p>
+          <ul>
+            <li>21 adult Korean participants (Google Forms)</li>
+            <li>18 Bengali-speaking participants (Prolific)</li>
+          </ul>
 
-  <p>
-    MELT consistently outperformed the baseline across all criteria.
-    In the Korean case, the Cultural Adaptation score nearly doubled compared to the base model.
-  </p>
+          <p>
+            Participants evaluated aligned folktale pairs (Baseline vs. MELT) 
+            using a 5-point Likert scale.
+          </p>
 
-  <h3>Table: Human Evaluation Results</h3>
+          <p><strong>Evaluation Criteria:</strong></p>
+          <ul>
+            <li>Overall Quality</li>
+            <li>Cultural Adaptation</li>
+            <li>Cultural Coherence</li>
+          </ul>
 
-  <table border="1" cellpadding="8" cellspacing="0">
-    <thead>
-      <tr>
-        <th rowspan="2">Metric</th>
-        <th colspan="2">Korean</th>
-        <th colspan="2">Bengali</th>
-      </tr>
-      <tr>
-        <th>Base</th>
-        <th>MELT</th>
-        <th>Base</th>
-        <th>MELT</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Overall Quality</td>
-        <td>2.81 ± 0.98</td>
-        <td>4.19 ± 0.68</td>
-        <td>3.59 ± 0.07</td>
-        <td>4.15 ± 0.14</td>
-      </tr>
-      <tr>
-        <td>Cultural Adaptation</td>
-        <td>2.29 ± 1.01</td>
-        <td>4.51 ± 0.75</td>
-        <td>3.33 ± 0.18</td>
-        <td>4.09 ± 0.05</td>
-      </tr>
-      <tr>
-        <td>Cultural Coherence</td>
-        <td>2.48 ± 0.93</td>
-        <td>4.33 ± 0.66</td>
-        <td>3.28 ± 0.39</td>
-        <td>4.32 ± 0.05</td>
-      </tr>
-    </tbody>
-  </table>
+        </div>
+
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th rowspan="2">Metric</th>
+                <th colspan="2">Korean</th>
+                <th colspan="2">Bengali</th>
+              </tr>
+              <tr>
+                <th>Base</th>
+                <th>MELT</th>
+                <th>Base</th>
+                <th>MELT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Overall Quality</td>
+                <td>2.81 ± 0.98</td>
+                <td>4.19 ± 0.68</td>
+                <td>3.59 ± 0.07</td>
+                <td>4.15 ± 0.14</td>
+              </tr>
+              <tr>
+                <td>Cultural Adaptation</td>
+                <td>2.29 ± 1.01</td>
+                <td>4.51 ± 0.75</td>
+                <td>3.33 ± 0.18</td>
+                <td>4.09 ± 0.05</td>
+              </tr>
+              <tr>
+                <td>Cultural Coherence</td>
+                <td>2.48 ± 0.93</td>
+                <td>4.33 ± 0.66</td>
+                <td>3.28 ± 0.39</td>
+                <td>4.32 ± 0.05</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </section>
   
 <!-- Ablation study -->
